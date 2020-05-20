@@ -17,8 +17,6 @@ public class HomePage extends BaseClass {
 
 	@Test(priority = 1)
 	public void homePage() {
-		WebElement bankManagerBtn= driver.findElement(By.cssSelector(prop.getProperty("bankManagerBtn_CSS")));
-		wait.until(ExpectedConditions.visibilityOf(bankManagerBtn));
 		Assert.assertTrue(verifyElement(By.cssSelector(prop.getProperty("bankManagerBtn_CSS"))));
 		click(By.cssSelector(prop.getProperty("bankManagerBtn_CSS")));
 	}
